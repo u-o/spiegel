@@ -1,0 +1,7 @@
+# Copy to config.toml (git-ignored) and set the path to your copy of the corpus:
+# the folder that contains spiegel-1965-10.pdf, spiegel-1965-10/, ...
+data_dir = "/path/to/spiegel/downloads"
+
+# Optional: further corpora, picked per run with SPIEGEL_DATA=<name>,
+# e.g. SPIEGEL_DATA=sample uses sample_dir.
+# sample_dir = "/path/to/spiegel-sample/downloads"

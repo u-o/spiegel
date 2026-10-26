@@ -1,0 +1,17 @@
+{
+  // downloads/ holds ~800k archive files (90+ GB); keep VS Code and extensions from scanning it
+  "files.watcherExclude": {
+    "**/downloads/**": true,
+    "**/.venv/**": true,
+    "**/__pycache__/**": true
+  },
+  "search.exclude": {
+    "**/downloads": true,
+    "**/.venv": true
+  },
+  "files.exclude": {
+    "**/downloads": true,
+    "**/__pycache__": true
+  },
+  "search.followSymlinks": false
+}

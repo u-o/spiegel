@@ -1,0 +1,1 @@
+MyResearchBot/0.1 (+mailto:you@example.org; purpose of the crawl and permission/ticket reference)

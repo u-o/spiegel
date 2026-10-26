@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -A \"Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0 Safari/537.36\" \"https://www.spiegel.de/spiegel/print/index-1998.html\" -o /private/tmp/claude-501/-Users-sancho-Code-26-spiegel/2489b2b6-bed8-4184-8513-63059d90db7f/scratchpad/year_1998.html -w \"HTTP %{http_code}, %{size_download} bytes\\\\n\")",
+      "Bash(curl -s -A \"Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0 Safari/537.36\" \"https://www.spiegel.de/spiegel/print/index-1947.html\" -o /private/tmp/claude-501/-Users-sancho-Code-26-spiegel/2489b2b6-bed8-4184-8513-63059d90db7f/scratchpad/year_1947.html -w \"HTTP %{http_code}, %{size_download} bytes\\\\n\")",
+      "Bash(sort -u -t- -k3 -n)",
+      "Bash(curl -s -A \"Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0 Safari/537.36\" \"https://www.spiegel.de/spiegel/print/index-1947-1.html\" -o /private/tmp/claude-501/-Users-sancho-Code-26-spiegel/2489b2b6-bed8-4184-8513-63059d90db7f/scratchpad/issue_1947_1.html -w \"HTTP %{http_code}, %{size_download} bytes\\\\n\")",
+      "Bash(.venv/bin/python3 -c \"import ast; ast.parse\\(open\\('extract-toc.py'\\).read\\(\\)\\); print\\('syntax ok'\\)\")",
+      "Bash(.venv/bin/python3 extract-toc.py --show 1965-1)"
+    ]
+  }
+}

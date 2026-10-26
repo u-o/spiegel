@@ -1,0 +1,19 @@
+# data lives outside the repo (set SPIEGEL_DATA); never commit it
+downloads/
+*.pdf
+
+# analysis output; keep the folder, not its contents
+data/*
+!data/.gitkeep
+
+# session cookies and our identifying User-Agent for the Spiegel account
+crawler/cookies.txt*
+crawler/user_agent.txt
+
+*.log
+.venv/
+__pycache__/
+.DS_Store
+
+# per-machine settings (copy config.example.toml)
+config.toml
