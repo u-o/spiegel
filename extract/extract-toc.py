@@ -375,7 +375,8 @@ def main():
     parser.add_argument("--rescan", action="store_true", help="ignore cached per-issue JSON")
     args = parser.parse_args()
 
-    pdfs = sorted(DOWNLOAD_DIR.glob("spiegel-*.pdf"), key=issue_key)
+    # regular issues only; special editions (spiegel-spjc-2025-1, ...) have no year-issue stem
+    pdfs = sorted(DOWNLOAD_DIR.glob("spiegel-[0-9]*.pdf"), key=issue_key)
 
     if args.show:
         y, i = map(int, args.show.split("-"))
